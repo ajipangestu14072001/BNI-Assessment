@@ -1,6 +1,7 @@
 package aji.dev.bniassessment.presentation.navigation
 
 import aji.dev.bniassessment.domain.model.Data
+import aji.dev.bniassessment.presentation.portofolio.PortofolioScreen
 import aji.dev.bniassessment.presentation.promo.PromoDetailScreen
 import aji.dev.bniassessment.presentation.promo.PromoScreen
 import androidx.compose.runtime.Composable
@@ -27,6 +28,12 @@ fun NavController(
             route = Screen.Promo.route,
         ) {
             PromoScreen(navController = navController)
+        }
+
+        composable(
+            route = Screen.Portofolio.route,
+        ) {
+            PortofolioScreen(navController = navController)
         }
     }
 }

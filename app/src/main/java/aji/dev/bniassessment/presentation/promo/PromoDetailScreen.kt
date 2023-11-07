@@ -31,7 +31,6 @@ fun PromoDetailScreen(
     navController: NavHostController?,
     data: Data
 ) {
-
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
