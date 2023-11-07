@@ -4,6 +4,7 @@ import aji.dev.bniassessment.domain.model.Data
 import aji.dev.bniassessment.presentation.portofolio.PortofolioScreen
 import aji.dev.bniassessment.presentation.promo.PromoDetailScreen
 import aji.dev.bniassessment.presentation.promo.PromoScreen
+import aji.dev.bniassessment.presentation.qris.QrisScreen
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
@@ -34,6 +35,12 @@ fun NavController(
             route = Screen.Portofolio.route,
         ) {
             PortofolioScreen(navController = navController)
+        }
+
+        composable(
+            route = Screen.Qris.route,
+        ) {
+            QrisScreen()
         }
     }
 }

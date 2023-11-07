@@ -67,13 +67,14 @@ fun PromoScreen(
                         modifier = Modifier
                             .padding(start = 5.dp, end = 20.dp)
                             .clickable {
+                                navController.navigate(Screen.Qris.route)
                             }
                     ) {
                         Icon(
                             imageVector = Icons.Outlined.History,
                             contentDescription = null,
 
-                        )
+                            )
                     }
                 }
             )
@@ -81,10 +82,10 @@ fun PromoScreen(
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
-
+                    navController.navigate(Screen.Qris.route)
                 },
 
-            ) {
+                ) {
                 Icon(imageVector = Icons.Default.QrCode2, contentDescription = "add icon")
             }
         }
