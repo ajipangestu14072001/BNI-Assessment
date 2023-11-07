@@ -67,7 +67,6 @@ fun PromoScreen(
                         modifier = Modifier
                             .padding(start = 5.dp, end = 20.dp)
                             .clickable {
-                                navController.navigate(Screen.Qris.route)
                             }
                     ) {
                         Icon(
@@ -82,7 +81,7 @@ fun PromoScreen(
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
-                    navController.navigate(Screen.Qris.route)
+                   promoViewModel.startScanning()
                 },
 
                 ) {
